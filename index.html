@@ -15,8 +15,21 @@
             </div>
             <img src="images/Burger-Header-min.png" alt="Burger with cheese">
         </header>
-        <main>
+        <main class="menu-section-container">
             <!-- Items -->
+            <div class="menu-container">
+                <div class="menu-item">
+                    <p>🍕</p>
+                </div>
+                <div class="menu-item-details-container">
+                    <h2 class="menu-item-header">Pizza</h2>
+                    <p class="menu-item-details">pepperoni, mushroom, mozerella</p>
+                    <p>$14</p>
+                </div>
+            </div>
+            <div class="menu-container-btn">
+                <button class="menu-add-btn">+</button>
+            </div>
         </main>
         <section class="order-section-container">
             <div class="order-section-header">
@@ -36,13 +49,14 @@
             </div>
             <button class="order-purchase-btn">Complete order</button>
         </section>
-        <div class="modal" id="modal">
-            <div class="modal-inner">]
+        <div class="modal hidden" id="modal">
+            <div class="modal-inner">
                 <h2 class="modal-title">Enter card details</h2>
                 <form>
                     <input type="text" placeholder="Enter your name">
                     <input type="text" placeholder="Enter card number">
                     <input type="text" placeholder="Enter CVV">
+                    <button type="submit" class="form-submit-btn">Pay</button>
                 </form>
             </div>
         </div>

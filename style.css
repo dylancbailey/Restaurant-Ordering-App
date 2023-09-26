@@ -14,10 +14,13 @@ body, h1, h2, p, ul {
 }
 
 /* Heading */
+header {
+    margin-bottom: 1rem;
+}
 .app-title-container {
     position: absolute;
     top: 50px;
-    left: 300px;
+    left: 330px;
     color: white;
     text-shadow: 1px 1px 2px black;
 }
@@ -26,6 +29,45 @@ body, h1, h2, p, ul {
 }
 .app-subtitle {
     font-size: 1rem;
+}
+
+/* Menu */
+.menu-section-container {
+    display: flex;
+    margin: 0 1.5rem;
+    padding: 2rem 0;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid black;
+}
+.menu-container {
+    display: flex;
+    align-items: center;
+}
+.menu-item > p{
+    font-size: 4rem;
+    margin-right: 1rem;
+    margin-left: -1rem;
+}
+.menu-item-details-container {
+    display: flex;
+    flex-direction: column;
+}
+.menu-item-header {
+    font-size: 1.2rem;
+}
+.menu-item-details {
+    margin: .5rem 0;
+    opacity: 50%;
+}
+.menu-add-btn {
+    background: none;
+    height: 40px;
+    width: 40px;
+    font-size: 1.5rem;
+    border-radius: 100%;
+    border: 1px solid rgba(0, 0, 0, .5);
+    color: gray
 }
 
 /* Ordering */
@@ -38,6 +80,7 @@ body, h1, h2, p, ul {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin: 2rem 0;
 }
 .order-header {
     font-weight: bold;
@@ -67,6 +110,7 @@ body, h1, h2, p, ul {
     width: 100%;
     background-color: #16DB99;
     border: #16DB99;
+    border-radius: 5px;
     color: white;
     font-weight: bold;
     padding: 1rem 0;
@@ -76,7 +120,7 @@ body, h1, h2, p, ul {
 .modal {
     width: 524px;
     height: 542px;
-    background: red;
+    background: white;
     position: absolute;
     top: 0;
     right: 0;
@@ -85,6 +129,37 @@ body, h1, h2, p, ul {
     margin: auto;
     box-shadow: 2px 2px 10px black;
 }
+.modal-inner, form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 1rem;
+}
+.modal-title {
+    font-weight: bold;
+    margin: 3rem 0;
+}
+input {
+    width: 75%;
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+    padding: 1rem;
+    border: 2px solid grey;
+    border-radius: 5px;
+}
+.form-submit-btn {
+    width: 81%;
+    font-size: 1rem;
+    font-weight: bold;
+    margin-top: 1rem;
+    padding: 1rem;
+    border: 2px solid #16DB99;
+    border-radius: 5px;
+    background-color: #16DB99;
+    color: white;
+}
+
 
 
 /* Utility */
