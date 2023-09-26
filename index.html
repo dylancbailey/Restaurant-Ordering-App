@@ -7,6 +7,46 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <div class="container">
+        <header>
+            <div class="app-title-container">
+                <h1 class="app-title">Munchie's Tavern</h1>
+                <p class="app-subtitle">The best burgers and pizzas in town.</p>
+            </div>
+            <img src="images/Burger-Header-min.png" alt="Burger with cheese">
+        </header>
+        <main>
+            <!-- Items -->
+        </main>
+        <section class="order-section-container">
+            <div class="order-section-header">
+                <h2 class="order-header">Your order</h2>
+            </div>
+            <div class="order-item-container">
+                <p class="order-item">Pizza <span class="order-remove-item">remove</span></p>
+                <div class="order-price">
+                    <p>$14</p>
+                </div>
+            </div>
+            <div class="order-total-container">
+                <p class="order-total-price">Total price:</p>
+                <div class="order-total-price">
+                    <p>$50</p>
+                </div>
+            </div>
+            <button class="order-purchase-btn">Complete order</button>
+        </section>
+        <div class="modal" id="modal">
+            <div class="modal-inner">]
+                <h2 class="modal-title">Enter card details</h2>
+                <form>
+                    <input type="text" placeholder="Enter your name">
+                    <input type="text" placeholder="Enter card number">
+                    <input type="text" placeholder="Enter CVV">
+                </form>
+            </div>
+        </div>
+    </div>
     <script src="app.js" type="module"></script>
 </body>
 </html>

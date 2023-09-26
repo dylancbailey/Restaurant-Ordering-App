@@ -1,6 +1,93 @@
-body {
+body, h1, h2, p, ul {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     user-select: none;
+}
+
+/* Main Container */
+.container {
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+}
+
+/* Heading */
+.app-title-container {
+    position: absolute;
+    top: 50px;
+    left: 300px;
+    color: white;
+    text-shadow: 1px 1px 2px black;
+}
+.app-title {
+    font-size: 1.5rem;
+}
+.app-subtitle {
+    font-size: 1rem;
+}
+
+/* Ordering */
+.order-section-container {
+    display: flex;
+    flex-direction: column;
+    padding: 0 1.5rem;
+}
+.order-section-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.order-header {
+    font-weight: bold;
+    font-size: 1.4rem;
+}
+.order-item-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: bold;
+    margin: .5rem 0;
+}
+.order-remove-item {
+    opacity: 50%;
+    font-size: .7rem;
+}
+.order-total-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 2px solid black;
+    margin-top: 1rem;
+    padding: 1rem 0;
+    font-weight: bold;
+}
+.order-purchase-btn {
+    width: 100%;
+    background-color: #16DB99;
+    border: #16DB99;
+    color: white;
+    font-weight: bold;
+    padding: 1rem 0;
+}
+
+/* Modal */
+.modal {
+    width: 524px;
+    height: 542px;
+    background: red;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    margin: auto;
+    box-shadow: 2px 2px 10px black;
+}
+
+
+/* Utility */
+.hidden {
+    display: none;
 }
